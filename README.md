@@ -96,3 +96,10 @@ The above image displays the DAP design we are implementing for the descyptive a
 * The above image displays the ETL results stored in the buckets inside folder "Outstanding Units".
 ![image 009-3](https://github.com/user-attachments/assets/423c401c-0c0d-4525-9506-b9aa84206f0d)<br>
 * The above image displays the ETL results stored in the buckets inside folder "Geo Area".
+* In the ETL pipeline there are multiple function we will be using. First step is to load the cleaned datasets into the console.
+* The second step is to drop unwanted columns and select only those in need. In my case we selected information on Business Operators, Outstanding Units, Total Units, Geo Local Area.
+* We then split into two step in 3rd stage  initially where we calculate the total units in a geo local area and the other where we calculate the total outstanding units in a geo local area.
+* Next come the case where we need to join these 3 split steps in 3rd stage together in the 4th stage using join function.
+* We can now use formula of dividing the total outstanding nits in a geo local area with the total units in a geo local area.
+* We can then store these calculated values and the whole information by using the partition keys in respective locations.
+* The outputs of ‘vrs-pipeline-ajayi’ job stored in ‘Otstanding_units’ folder in the ‘vrs-transformed-ajayi’ bucket.
