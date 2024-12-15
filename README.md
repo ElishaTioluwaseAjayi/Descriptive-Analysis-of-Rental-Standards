@@ -1,5 +1,5 @@
 
-# Part 1 - [Descryptive Analysis of Rental Standards of Vancouver City](https://elishatioluwaseajayi.github.io/Descriptive-Analysis-of-Rental-Standards/)
+# Descryptive Analysis of Rental Standards of Vancouver City
 * For anyone planning to move to Vancouver or even those living in Vancouver may need to analyse the details of rental and locations with additional information of facilities like hospitals, library, schools and other near it.
 * Similarly here I am planning to do descriptive analysis of the details of rentals in each location and also the exploratory analysis of rental units in each of these locations.
 * This is mainly to identify which of these areas have high rental units available throughout Vancouver.
