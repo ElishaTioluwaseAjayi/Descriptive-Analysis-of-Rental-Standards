@@ -59,8 +59,8 @@ The above image displays the DAP design we are implementing for the descyptive a
 * The above image shows the column statistics results of the dataset profiling job created.
 ![image 006](https://github.com/user-attachments/assets/c49fb566-f80d-4969-818e-5d6d2444dbbe)<br>
 * The above image shows the dataset lineage result of the dataset profiling job created.
-* 
 #### Step 3: Data Cleaning 
-This step explaing the Data cleaning done using the AWS DataBrew service.
+* This step explaing the Data cleaning done using the AWS DataBrew service.
+* 
 #### Step 4: Data Pipeline Design 
 This step explain the process of designing a ETL pipeline to transform raw data into structured data.
