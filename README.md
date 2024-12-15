@@ -49,6 +49,17 @@ The above image displays the DAP design we are implementing for the descyptive a
 * We will mainly even be checking if these data values are valid, there are any missing value or other issues with the data and its structure.
 ![image 003-2](https://github.com/user-attachments/assets/7307db4b-4734-4b66-92bb-5f6d9c82a8ff)<br>
 * The above image shows an important step of profiling in DAP design.
+![image 003-1](https://github.com/user-attachments/assets/787a7dda-2bf8-4316-bec8-ec1a2cbbd102)<br>
+* The above image shows the dataset profiling job created.
+![image 004](https://github.com/user-attachments/assets/304e6d70-5cb6-4cf6-bd10-736613a52989)<br>
+* The above image shows the result of the data profiling job created.
+![image 004-2](https://github.com/user-attachments/assets/6861fe13-4f7e-439a-bdb9-6aae1d06e3dc)<br>
+* The above image shows the result of the dataset profiling job created.
+![image 005](https://github.com/user-attachments/assets/56650528-4193-4e72-b669-4c89f8f8fd19)<br>
+* The above image shows the column statistics results of the dataset profiling job created.
+![image 006](https://github.com/user-attachments/assets/c49fb566-f80d-4969-818e-5d6d2444dbbe)<br>
+* The above image shows the dataset lineage result of the dataset profiling job created.
+* 
 #### Step 3: Data Cleaning 
 This step explaing the Data cleaning done using the AWS DataBrew service.
 #### Step 4: Data Pipeline Design 
