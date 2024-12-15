@@ -25,6 +25,8 @@ Using the above dataset details we will be finding below details as part of our 
 * I selected to work on the rental agencies in different areas of Vancouver.
 * This second part of the DAP design includes the next process of DAP that is once the needed analysis data is available after Glue pipeline design.
 * This included multiple details and segments discussed below.
+![image 000](https://github.com/user-attachments/assets/a70419bf-6d2f-44d0-a09d-436113eee21f)<br>
+The above images displays the descryptive analysis of our DAP model. 
 #### Step 1: Data Ingestion
 * This step explains about the Data ingestion into AWS Environment.
 * Previously we decided that the descriptive metric is “What is the percentage of number of available Rental  Business Operators in each Geo-areas of Vancouver?”.
@@ -34,10 +36,19 @@ Using the above dataset details we will be finding below details as part of our 
 * Inside the “vrs-raw-ajayi” bucket we will be creating a ‘Ingestion-year-2024’ folder to store the details of the ‘Rental Stnadards’.
 * We will also create 3 folders inside “vrs-transformed-ajayi” bucket called ‘Data-cleaning’, ‘Data-profiling’ and ‘Rental-Operators’.
 * This is to store the details respectively for these stages. Below are the images showing these storage details.
-![image 000](https://github.com/user-attachments/assets/a70419bf-6d2f-44d0-a09d-436113eee21f)<br>
-The above images displays the descryptive analysis of our DAP model.
+![image 001](https://github.com/user-attachments/assets/eaf89db3-722c-4b6a-b718-6792029bac32)<br>
+The above image displays the DAP design we are implementing for the descyptive analysis.
+![image 002](https://github.com/user-attachments/assets/efd81569-7dae-42e5-a2fe-1d10330018fb)<br>
+* The above image shows the buckets created
+![image 003](https://github.com/user-attachments/assets/80b487a5-5218-4d5b-b3be-a9fd54193bc5)<br>
+* The above image shows the excel file uploaded in the folder inside raw bucket.
 #### Step 2: Data Profiling
-This step explain the data profiling in the AWS environment.
+* This step explain the data profiling in the AWS environment.
+* During Profiling we will be do a detailed understanding on the dataset we selected.
+* Like we will be checking on the data, its quality, validity, and other details.
+* We will mainly even be checking if these data values are valid, there are any missing value or other issues with the data and its structure.
+![image 003-2](https://github.com/user-attachments/assets/7307db4b-4734-4b66-92bb-5f6d9c82a8ff)<br>
+* The above image shows an important step of profiling in DAP design.
 #### Step 3: Data Cleaning 
 This step explaing the Data cleaning done using the AWS DataBrew service.
 #### Step 4: Data Pipeline Design 
