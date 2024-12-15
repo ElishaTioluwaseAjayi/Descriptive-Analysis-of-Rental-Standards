@@ -59,8 +59,40 @@ The above image displays the DAP design we are implementing for the descyptive a
 * The above image shows the column statistics results of the dataset profiling job created.
 ![image 006](https://github.com/user-attachments/assets/c49fb566-f80d-4969-818e-5d6d2444dbbe)<br>
 * The above image shows the dataset lineage result of the dataset profiling job created.
+* We can do this profiling by first creating the needed dataset in AWS Glue DataBrew. As shown above.
+* For this we will be using the ‘rental-stnadards-current-issues.xlsx’ file stored in the ‘Ingestion-year-2024’ folder of the ‘vrs-raw-ajayi’ bucket.
+* We named this dataset as ‘van-rental-standards-dataset-ajayi’ and in this we will do the profiling of data.
+* The next process is to create a profiling job named ‘vrs-prf-job-ajayi’.
+![image 006-1](https://github.com/user-attachments/assets/bd3af7fc-6432-4753-ad24-a8367536d6a2)<br>
+* The above image shows where the [profiling job results are stored.
+* The results are shown above and the job run details are shown below. We can see there are missing values.
 #### Step 3: Data Cleaning 
 * This step explaing the Data cleaning done using the AWS DataBrew service.
-* 
+* Here this is crucial step where we need to ensure we can clean the data so that the quality can be maintained and the analysis will not be affected by issues like missing values, outliers or others.
+* Now the first priority is to create an ETL project. We are naming it as “vrs-cleaning-project-ajayi”.’
+* Below mentioned are the details of the various cleaning measures we took. Like for columns like Geom, Geo Local Area, geo_point_2d have missing values so we added a custom value “NA” to overcome this.
+* Then these columns along with columns like Business Operator, Detail url, Street we cleaned the data for any white spaces in the data.
+* Finally all the columns were also renamed based on need and ease of access.
+![image 007](https://github.com/user-attachments/assets/88ffec8c-40de-42fc-9737-131dfdb1733c)<br>
+* The above images shows list of data cleaning changes to be done on dataset.
+![image 007-1](https://github.com/user-attachments/assets/b0022441-1d92-4866-9728-700370560510)<br>
+* The above image shows the data lineage of data cleaning job created.
+![image 008](https://github.com/user-attachments/assets/4ba6fd81-b955-494b-842d-c8b221fa0240)<br>
+* The above image displays the cleaning job results stored in the bucket.
+![image 008-1](https://github.com/user-attachments/assets/46d7e401-7bdf-4ca0-a852-4739957235b5)<br>
+* The above image shows the details of data cleaning job created.
+* The final results after the ‘vrs-cleaning-job-ajayi’ are stored in the ‘Data-cleaning’ folder inside the ‘vrs-transformed-ajayi’ bucket inside S3.
 #### Step 4: Data Pipeline Design 
-This step explain the process of designing a ETL pipeline to transform raw data into structured data.
+* This step explain the process of designing a ETL pipeline to transform raw data into structured data.
+* Once the cleaning is done on the data we will now create an ETL pipeline for transforming the data.
+* This is to ensure the validity of data is guaranteed and trusted. We named the pipeline as “vrs-pipeline-ajayi” in AWS Glue.
+![image 009-0](https://github.com/user-attachments/assets/e38b4e67-44d5-4718-b13b-80aa0bf548ff)<br>
+* The above image displays the ETL pipeline information.
+![image 009](https://github.com/user-attachments/assets/95b055e5-ed18-48ab-b425-623054c59463)<br>
+* The above image displays the end results of the analysis using ETL pipeline.
+![image 009-1](https://github.com/user-attachments/assets/00ae5a7c-5ece-42ab-994e-f8dda8458320)<br>
+* The above image displays job run results of the analysis using ETL pipeline.
+![image 009-2](https://github.com/user-attachments/assets/d3994a50-47de-469a-9922-4ba6ae5dddba)<br>
+* The above image displays the ETL results stored in the buckets inside folder "Outstanding Units".
+![image 009-3](https://github.com/user-attachments/assets/423c401c-0c0d-4525-9506-b9aa84206f0d)<br>
+* The above image displays the ETL results stored in the buckets inside folder "Geo Area".
